@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Made quantity present or not present JRL 
+     Addes root item of ItemList JRL-->
+<!ELEMENT ItemsList (#PCDATA | Item)*>
+
+<!-- Add ID/IDREFF attribute -->
+<!ATTLIST Item ItemNumber ID #REQUIRED >
+<!ATTLIST ItemsList ItemRef IDREF #IMPLIED >
+
+<!ELEMENT Item (Quantity?,ItemName) >
+<!ELEMENT ItemName (#PCDATA) >
+<!ELEMENT Quantity (#PCDATA) >
+<!-- Added ATTLIST for UOM as an enumerated type JRL -->
+<!ATTLIST Quantity UOM ( C | tsp | tbsp | lb) #IMPLIED>

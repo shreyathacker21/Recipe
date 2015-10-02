@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Recipe_StyleSheet.xsl"?>
+
+<!-- Adding Group as an internal general entity  -->
+<!DOCTYPE Recipe SYSTEM "Recipe.dtd" 
+[ <!ENTITY Group  "Recipe 1" > ] 
+>
+
+<Recipe ID="123">
+    
+    <Recipe_Header>
+        <GroupName>
+            &Group;
+        </GroupName>
+        <Name>
+            Banana Bread 
+        </Name>
+        
+        <Date_Submitted>
+            Aug 14, 2014
+        </Date_Submitted>
+        
+        <Author Name="Elsie" />
+            
+        
+        
+        <Company>
+            Simplyrecipes.com
+        </Company>
+    
+    </Recipe_Header>
+    
+    <Image rec_image="banana-bread-600.jpg">
+        
+    </Image>
+    
+    <Ingredients>
+        <ItemsList>    
+            <Item ItemNumber="I1">
+                <Quantity UOM="C">
+                    3
+                </Quantity>
+                <ItemName>
+                    very ripe bananas, peeled
+                </ItemName>
+            </Item>
+            
+            <Item ItemNumber="I2">
+                <Quantity UOM="C"> 
+                    1/3 
+                </Quantity>
+                <ItemName>
+                    cup melted butter
+                </ItemName>
+            </Item>
+            
+            <Item ItemNumber="I3">
+                <Quantity UOM="C"> 
+                    1 
+                </Quantity>
+                <ItemName>
+                    sugar
+                </ItemName>
+            </Item>
+           
+            <Item ItemNumber="I4">
+                <Quantity UOM="C">
+                    1 
+                </Quantity>
+                <ItemName>
+                    egg, beaten
+                </ItemName>
+            </Item>
+           
+            <Item ItemNumber="I5">
+                <Quantity UOM="tsp">
+                    1 
+                </Quantity>
+                <ItemName>
+                    vanilla extract
+                </ItemName>
+            </Item>
+           
+            <Item ItemNumber="I6">
+                <Quantity UOM="tsp">
+                    1 
+                </Quantity>
+                <ItemName>
+                    baking soda
+                </ItemName>
+            </Item>
+            
+            <Item ItemNumber="I7">
+                <Quantity UOM="C"> 
+                    1 1/2
+                </Quantity>
+                <ItemName>
+                    all-purpose flour
+                </ItemName>
+            </Item>
+              
+        </ItemsList>
+    </Ingredients>
+    <Directions>
+        <Steps>
+            
+            <StepDescription StepNumber = "1">
+                Preheat the oven to 350°F (175°C), and butter a 4x8-inch loaf pan.
+            </StepDescription>
+            
+            <StepDescription StepNumber = "2">
+                In a mixing bowl, mash the ripe bananas with a fork until smooth. Stir the melted butter into the mashed bananas.
+            </StepDescription>
+            
+            <StepDescription StepNumber = "3">
+                Mix in the baking soda and salt. Stir in the sugar, beaten egg, and vanilla extract. Mix in the flour.
+            </StepDescription>
+            
+            <StepDescription StepNumber = "4">
+                Pour the batter into your prepared loaf pan. Bake for 1 hour to 1 hour 10 minutes (check at 50 minutes) at 350°F (175°C), or until a tester inserted into the center comes out clean.
+            </StepDescription>
+            
+            <StepDescription StepNumber = "5">
+                While oil is heating up to 360F. Combine flour with spices, salt and pepper.
+            </StepDescription>
+            
+            <StepDescription StepNumber = "6">
+                Remove from oven and cool completely on a rack. Remove the banana bread from the pan. Slice and serve. (A bread knife helps to make slices that aren't crumbly.)
+            </StepDescription>
+        </Steps>
+    </Directions>
+
+</Recipe>

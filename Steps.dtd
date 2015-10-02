@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Steps contains zero or more  StepDescription -->
+<!ELEMENT Steps (StepDescription*) >
+
+<!-- add step number as an attribute. JRL -->
+<!ELEMENT  StepDescription (#PCDATA) >
+<!ATTLIST StepDescription StepNumber CDATA  #IMPLIED>

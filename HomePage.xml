@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="homepage.xsl"?>
+<!DOCTYPE Recipe_Home SYSTEM "HomePage.dtd">
+<Recipe_Home>
+    
+       <RecipeID ID="1"> 
+           <Image pic="banana-bread-600.jpg">
+               
+           </Image>
+           <Web href="Recipe2_BananaBread.xml">
+           Banana Bread
+       </Web>
+           
+       </RecipeID>
+    
+    <RecipeID ID="2"> 
+        <Image pic="calamari.jpg">
+            
+        </Image>
+        <Web href="Calamari_group4.xml">
+            Calamari
+        </Web>
+        
+    </RecipeID>
+    
+    <RecipeID ID="3"> 
+        <Image pic="Recipe3.jpg">
+            
+        </Image>
+        <Web href="ChickenChimichangas.xml">
+            Chicken Chimichangas
+        </Web>
+        
+    </RecipeID>
+    
+</Recipe_Home>

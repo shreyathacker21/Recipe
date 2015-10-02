@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Recipe_StyleSheet.xsl"?> 
+
+<!-- Adding Group as an internal general entity  -->
+<!DOCTYPE Recipe SYSTEM "Recipe.dtd" 
+[ <!ENTITY Group  "Recipe 3" > ] 
+>
+
+<Recipe ID="324">
+
+    <Recipe_Header>
+        <GroupName>
+            &Group;
+        </GroupName>
+        <Name>Oven-Fried Chicken Chimichangas</Name>
+        <Description>
+            A fast and healthier way to serve Chimichangas than the traditional deep fried. 
+            These are very good, and you may dress them up to you own preference. 
+            I like to serve with green chile sauce sometimes instead of the picante sauce.
+        </Description>
+        <Author Name="Miss Annie"></Author>
+        
+    </Recipe_Header>
+    
+    <Serves></Serves>
+    
+    <CookTime>
+        <TotalTime>
+            
+        </TotalTime>
+    </CookTime>
+    <Image rec_image="Recipe3.jpg">
+        
+    </Image>
+    <Ingredients>
+        <ItemsList>
+            <Item ItemNumber="I0">
+                <Quantity UOM="C"> 2/3 </Quantity>
+                <ItemName>cup picante sauce or your favorite salsa.</ItemName>
+            </Item>
+            <Item ItemNumber="I14">
+                <Quantity UOM="tsp"> 1 </Quantity> 
+                <ItemName> ground cumin.</ItemName>
+            </Item>
+            <Item ItemNumber="I11">
+                <Quantity UOM="tsp"> 1/2 </Quantity> 
+                <ItemName>dried oregano leaves, crushed</ItemName>
+            </Item>
+            <Item ItemNumber="I1">
+                <Quantity UOM="C"> 1 1/2</Quantity> 
+                <ItemName>cooked chicken, chopped</ItemName>
+            </Item>
+            <Item ItemNumber="I2">
+                <Quantity UOM="C"> 1 </Quantity> 
+                <ItemName>shredded cheddar cheese.</ItemName>
+            </Item>
+            <Item ItemNumber="I3">
+                <Quantity> 2 </Quantity> 
+                <ItemName>green onions, chopped with some tops (about 1/4 cup).</ItemName>
+            </Item>
+            <Item ItemNumber="I4">
+                <Quantity > 6 </Quantity> 
+                <ItemName>(8 inch) flour tortillas.</ItemName>
+            </Item>
+            <Item ItemNumber="I5">
+                <Quantity UOM="tbsp"> 1 </Quantity> 
+                <ItemName>margarine, melted</ItemName>
+            </Item>
+            <Item ItemNumber="I6"> 
+                <ItemName>shredded cheddar cheese, for serving</ItemName>
+            </Item>
+            <Item ItemNumber="I7">
+                <ItemName>chopped green onion, for serving</ItemName>
+            </Item>
+            <Item ItemNumber="I8">
+                <ItemName>picante sauce, for serving</ItemName>
+            </Item>
+        </ItemsList>
+            
+        
+    </Ingredients>
+    
+    <Directions>
+        <Steps>
+            <StepDescription StepNumber = "1">
+                Mix chicken, picante sauce or salsa, cumin, oregano, cheese and onions.
+            </StepDescription>
+            <StepDescription StepNumber = "2">
+                Place about 1/4 cup of the chicken mixture in the center of each tortilla.
+            </StepDescription>
+            <StepDescription StepNumber = "3">
+                Fold opposite sides over filling.
+            </StepDescription>
+            <StepDescription StepNumber = "4">
+                Roll up from bottom and place seam-side down on a baking sheet.
+            </StepDescription>
+            <StepDescription StepNumber = "5">
+                Brush with melted margarine.
+            </StepDescription>
+            <StepDescription StepNumber = "6">
+                Bake at 400°F for 25 minutes or until golden.
+            </StepDescription>
+            <StepDescription StepNumber = "7">
+                Garnish with additional cheese and green onion and serve salsa on the side.
+            </StepDescription>
+        </Steps>
+    </Directions>
+    
+   
+</Recipe>

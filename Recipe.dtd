@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- create Items and Steps as parameter entity -->
+<!ENTITY % ItemsList SYSTEM "Items.dtd" >
+<!ENTITY % Steps SYSTEM "Steps.dtd" >
+
+<!-- Adding group.xml as an external general entity JRL -->
+<!--  <!ENTITY Group SYSTEM "Group4.xml" >  -->
+
+
+<!-- Recipe element contains Recipe_Header, servers or not, cookTime or not, image, one or more 
+Ingredients, and one or more Directions or one or more Procedure -->
+<!ELEMENT Recipe (Recipe_Header,Serves?,CookTime?,Image,Ingredients+,(Directions+ | Procedure+))>
+<!ATTLIST Recipe ID CDATA #REQUIRED >
+
+<!-- Changed Receipe_name to receipe_header.  Added date submitted, company and added author to the element JRL-->
+<!-- Receipe_header contains name, description or not, Date_Submitted or not, zero or more auther, and company or not-->
+<!ELEMENT Recipe_Header (GroupName,Name,Description?,Date_Submitted?, Author*, Company?) >
+<!ELEMENT Date_Submitted (#PCDATA) >
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Description (#PCDATA) >
+
+<!-- Create Author as empty element -->
+<!ELEMENT Author EMPTY >
+<!ATTLIST Author Name CDATA #REQUIRED >
+
+<!ELEMENT Company (#PCDATA) >
+<!ELEMENT Serves (#PCDATA) >
+
+<!-- CookTime element may contain one activeTime/TotalTime or not -->
+<!ELEMENT CookTime (ActiveTime?,TotalTime?) >
+<!ELEMENT ActiveTime (#PCDATA) >
+<!ELEMENT TotalTime (#PCDATA) >
+
+<!ELEMENT Image ANY >
+<!ATTLIST Image rec_image CDATA #REQUIRED >
+
+<!-- Ingredients element contains ItemsList -->
+<!ELEMENT Ingredients (ItemsList)* >
+%ItemsList;
+
+<!-- Directions element contains one or more Steps -->
+<!ELEMENT Directions (Steps+) >
+
+<!-- Procedure element contains one or more Steps -->
+<!ELEMENT Procedure (Steps+) >
+%Steps;
+
+<!ELEMENT GroupName (#PCDATA) >
+

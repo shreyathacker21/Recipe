@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Home page contain one or more recipe -->
+<!ELEMENT Recipe_Home (RecipeID+) >
+
+<!-- each recipe has one or more image and one or more webpage -->
+<!ELEMENT RecipeID (Image+,Web+) >
+<!ATTLIST RecipeID ID CDATA #REQUIRED >
+
+<!ELEMENT Web (#PCDATA) >
+<!ATTLIST Web href CDATA #REQUIRED>
+
+<!ELEMENT Image ANY >
+<!ATTLIST Image pic CDATA #REQUIRED >
